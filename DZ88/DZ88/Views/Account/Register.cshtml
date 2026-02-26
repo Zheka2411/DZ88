@@ -1,0 +1,16 @@
+
+@model RegisterValidationApp.Models.RegisterViewModel
+<form asp-action="Register" method="post">
+<input asp-for="FirstName"/>
+<input asp-for="LastName"/>
+<input asp-for="Username"/>
+<input asp-for="Email"/>
+<input asp-for="PhoneNumber"/>
+<input asp-for="Age"/>
+<input asp-for="CreditCardNumber"/>
+<input asp-for="Website"/>
+<input asp-for="Password" type="password"/>
+<input asp-for="ConfirmPassword" type="password"/>
+<input asp-for="TermsOfService" type="checkbox"/>
+<button type="submit">Register</button>
+</form>
